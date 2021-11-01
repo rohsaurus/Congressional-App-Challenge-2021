@@ -68,14 +68,17 @@ def main():
         print("After run = true")
         window['-GESTURE-'].update(output)
         if output == 1:
-            pyautogui.press('right')
+            #pyautogui.press('right')
             print("Ran output version 1")
         if output == 2:
-            pyautogui.press('left')
+           # pyautogui.press('left')
             print("Ran output version 2")
         if output == 3:
-            pyautogui.press('up')
+            pyautogui.press('right')
             print("Ran output version 3")
+        if output == 4:
+            pyautogui.press('right')
+            print("Ran output version 4")
         print("About to output video camera")
         #imgbytes = cv2.imencode(".png", frame)[1].tobytes()
         #window["-IMAGE-"].update(data=imgbytes)
